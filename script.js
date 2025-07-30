@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".dots").forEach(dotsContainer => {
-        let level = parseInt(dotsContainer.getAttribute("data-level"));
-        let totalDots = 10; // số chấm tối đa
+        const level = parseInt(dotsContainer.getAttribute("data-level")) || 0;
+        const totalDots = 10; // số chấm tối đa
+
+        dotsContainer.innerHTML = ""; // xóa nội dung cũ
 
         for (let i = 1; i <= totalDots; i++) {
-            let dot = document.createElement("span");
+            const dot = document.createElement("span");
             dot.classList.add("dot");
             if (i <= level) dot.classList.add("filled");
             dotsContainer.appendChild(dot);
