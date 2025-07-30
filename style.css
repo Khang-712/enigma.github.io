@@ -76,7 +76,7 @@ body {
 
 .hobbies {
     list-style: disc; /* dấu chấm đen mặc định */
-    padding-left: 20px; /* tạo khoảng cách với chấm đen */
+    padding-left: 20px;
     margin: 0;
     text-align: left;
 }
