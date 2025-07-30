@@ -75,25 +75,15 @@ body {
 }
 
 .hobbies {
-    list-style: none; /* bỏ chấm mặc định */
-    padding: 0;
+    list-style: disc; /* dấu chấm đen mặc định */
+    padding-left: 20px; /* tạo khoảng cách với chấm đen */
     margin: 0;
-    text-align: left; /* căn trái để dễ đọc */
+    text-align: left;
 }
 
 .hobbies li {
-    padding: 5px 0;
+    padding: 4px 0;
     font-size: 14px;
-    display: flex;
-    align-items: center;
-}
-
-.hobbies li::before {
-    content: "•"; /* biểu tượng trước mỗi sở thích */
-    color: #c19ae6; /* tím nhạt */
-    font-weight: bold;
-    margin-right: 8px;
-    font-size: 18px;
 }
 
 /* Cột phải */
